@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	
+		<main>
+             <nav class="nav  d-flex justify-content-between">
+             	<input type="checkbox" id="check_menu" class="nav__btn">
+             	<label class="nav__burger" for="check_menu">
+
+             		<span class="nav__line"></span>
+             	</label>
+             	<ul class="nav__bar d-flex justify-content-between">
+             		<li class="nav__item"><a href="#"> portfolio</a></li>
+             		<li class="nav__item"><a href="#"> clients</a></li>
+             		<li class="nav__item"><a href="#"> news</a></li>
+             		<li class="nav__item"><a href="#"> about me</a></li>
+             		<li class="nav__item"><a href="#"> contact</a></li>
+             	</ul>
+             	<ul class="nav__socials">
+             		<li class="nav__social">
+             			<a href="#"><svg aria-hidden="true" focusable="true" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
+             		</li>
+             		<li class="nav__social">
+             			<a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+             		</li>
+             		<li class="nav__social">
+             			<a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="camera-retro" class="svg-inline--fa fa-camera-retro fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="" d="M48 32C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48H48zm0 32h106c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H38c-3.3 0-6-2.7-6-6V80c0-8.8 7.2-16 16-16zm426 96H38c-3.3 0-6-2.7-6-6v-36c0-3.3 2.7-6 6-6h138l30.2-45.3c1.1-1.7 3-2.7 5-2.7H464c8.8 0 16 7.2 16 16v74c0 3.3-2.7 6-6 6zM256 424c-66.2 0-120-53.8-120-120s53.8-120 120-120 120 53.8 120 120-53.8 120-120 120zm0-208c-48.5 0-88 39.5-88 88s39.5 88 88 88 88-39.5 88-88-39.5-88-88-88zm-48 104c-8.8 0-16-7.2-16-16 0-35.3 28.7-64 64-64 8.8 0 16 7.2 16 16s-7.2 16-16 16c-17.6 0-32 14.4-32 32 0 8.8-7.2 16-16 16z"></path></svg></a>
+             		</li>
+             		<li class="nav__social">
+             			<a href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="toolbox" class="svg-inline--fa fa-toolbox fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="" d="M502.63 214.63l-45.25-45.25c-6-6-14.14-9.37-22.63-9.37H384V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v80H77.25c-8.49 0-16.62 3.37-22.63 9.37L9.37 214.63c-6 6-9.37 14.14-9.37 22.63V320h128v-16c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v16h128v-16c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v16h128v-82.75c0-8.48-3.37-16.62-9.37-22.62zM320 160H192V96h128v64zm64 208c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-16H192v16c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-16H0v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96H384v16z"></path></svg></a>
+             		</li>
+             		<li class="nav__social">
+             			<a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-plus-g" class="svg-inline--fa fa-google-plus-g fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 512"><path fill="" d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"></path></svg></a>
+             		</li>
+             		<li class="nav__social">
+             			<a href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg></a>
+             		</li>
+             	</ul>
+             </nav>
+			<section class="about container-fluid ">
+				<div class="wrapper row align-items-end">
+					
+				<div class="about__foto col-6" >
+					<img src="img/your photo.png" alt="">
+				</div>
+				<div class="about__text col-6">
+					<h2 class="about__title ">about me</h2>
+					<p> <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Vestibulum mollis risus et sem facilisis, eget pulvinar purus rutrum. <strong>Vestibulum vitae finibus sem</strong>, at feugiat libero. Sed non leo metus. Suspendisse <i>condimentum mauris purus</i>, non finibus nisi sollicitudin ut. Integer pulvinar vestibulum justo ut porttitor. </p>
+					<p>Phasellus dui erat, <i>luctus nec convallis lobortis</i>, pulvinar at purus. Aliquam sit amet ligula sapien. Aenean eu eleifend nisl. Quisque eu eros eros. Quisque hendrerit eleifend ultrices. Aliquam sit amet placerat erat, nec lobortis tortor. <strong>Maecenas massa eros, fermentum in mauris nec, interdum rutrum sapien.</strong>
+                     </p>
+					<p>Phasellus in tincidunt velit. <i> Nunc ullamcorper massa sed magna consequat</i>, ut malesuada lacus efficitur. Ut a sollicitudin nulla, et sollicitudin sapien. Aliquam diam ex, posuere et odio vel, sagittis efficitur magna. <strong>Maecenas eu urna id justo sollicitudin pellentesque ut eu est.</strong> Aenean nisl ante, consequat sit amet justo a, dignissim tempus tellus. Duis hendrerit ante arcu, iaculis ultrices lectus fermentum eget. <strong>Phasellus volutpat finibus ipsum nec accumsan.</strong></p>
+					<p>Aenean laoreet dapibus metus vitae condimentum. <strong>Aliquam tortor urna, vestibulum et ultrices sed, porttitor sit amet arcu.</strong> Nam mollis, erat a mattis ornare, erat magna ultrices leo, quis interdum erat arcu vitae magna. <i> Etiam vitae ex mattis, vestibulum lorem id, gravida magna. Aenean porta dui a metus convallis volutpat.</i> Maecenas imperdiet tempor dui non laoreet. Sed ipsum arcu, rutrum eget egestas in, ullamcorper vitae massa. In volutpat dolor ligula, in congue urna suscipit non. <strong>Donec eleifend tempus velit eu viverra.</strong> Praesent sagittis auctor finibus. <strong> Proin maximus, nibh eu ultrices imperdiet, nulla odio consectetur ex, a tempus nisl ante nec urna.</strong> Praesent sapien diam, fringilla non molestie ac, commodo eget lectus. Nunc interdum purus eu auctor volutpat. Aliquam vestibulum a sapien in efficitur. <strong> Vivamus non dui velit</strong>.</p>
+				</div>
+				</div>
+			</section>
+			<section class="timeline container-fluid">
+				<div class="timeline__wrapper row">
+					
+				    <div class="timeline__title col-2">
+				    	<span>timeline</span>
+				    </div>
+				    <div class="timeline__data col-2">
+				    	<h2>1995</h2>
+				    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <font color="red">	Vestibulum mollis risus et sem facilisis</font>, eget pulvinar purus rutrum. <strong>Vestibulum vitae finibus sem, at feugiat libero.</strong></p>
+				    </div>
+				    <div class="timeline__data col-2">
+				    	<h2>1996-2000</h2>
+				    	<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. </p>
+				    	<p>Phasellus in tincidunt velit. Nunc ullamcorper massa sed magna consequat, ut malesuada lacus efficitur.</p>
+				    	<p>Donec in nibh sit amet mauris lobortis <i>sollicitudin in at nibh</i>. Donec rhoncus dui ex, euismod maximus nibh aliquet vitae. <strong>Etiam varius purus lobortis nunc consequat placerat.</strong> </p>
+				    </div>
+				    <div class="timeline__data col-2">
+				    	<h2>2000-2006</h2>
+                        <p><strong>Suspendisse quis eros elit</strong>. Pellentesque maximus magna ut enim maximus pharetra. <font color="red"> Proin quis sodales neque, non aliquet libero </font></p>
+                        <p>Maecenas eu eleifend eros. </p>
+                        <p>Aliquam ut mattis augue. Donec <strong>at lacus in turpis dapibus</strong> pellentesque fermentum vel nisl. Donec placerat <strong> augue vitae congue semper.</strong> </p>
+                        <p>Cras tempor semper malesuada. <strong> Sed elit odio, fringilla </strong>vehicula mollis fringilla, feugiat sit amet ipsum  </p>                           
+				    </div>
+				    <div class="timeline__data col-2">
+				    	<h2>2006-2011</h2>
+                        <p>Aenean laoreet dapibus metus vitae condimentum.</p>
+                        <p><strong>Ut a sollicitudin nulla,</strong> et sollicitudin sapien. Aliquam diam ex, posuere et odio vel, <i>sagittis efficitur magna</i>.</p>
+                        <p>Quisque placerat velit ut lobortis ullamcorper. Nullam tortor odio, ultrices a <font color="red">sollicitudin at, malesuada eget quam. Maecenas neque tortor,</font></p>
+                        <p>Donec rhoncus dui ex, euismod maximus nibh aliquet vitae. <strong>Etiam varius purus lobortis </strong>nunc consequat placerat. Duis congue orci vel odio placerat,</p>
+				    </div>
+				    <div class="timeline__data col-2">
+				    	<h2>2011-2014</h2>
+				    	<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Vestibulum mollis risus et sem facilisis, eget pulvinar purus rutrum. <strong>Vestibulum vitae finibus sem, at feugiat libero.</strong></p>
+				    	<p>Phasellus dui erat, luctus nec convallis lobortis, pulvinar at purus. <i>Aliquam sit amet ligula sapien.</i></p>
+				    	<p>Maecenas massa eros, fermentum in mauris nec, <strong>interdum rutrum sapien.</strong></p>
+				    </div>
+
+				</div>
+			</section>
+			<section class="client container-fluid">
+				<div class="client__wrapper row ">
+					   <div class="client__title col-2">
+				    	<span>client</span>
+				    </div>
+				    <div class="client__data col-2">
+				    	<h2>brands</h2>
+				    	<ul class="client__list">
+				    		<li><span>The Coca Cola</span></li>
+				    		<li><span>Apple</span></li>
+				    		<li><span>General Motors</span></li>
+				    		<li><span>Dolce & Gabbana</span></li>
+				    		<li><span>Prada</span></li>
+				    		<li><span>Motorolo</span></li>
+				    		<li><span>Nike</span></li>
+				    		<li><span>Hard Rock Cafe</span></li>
+				    		<li><span>Yamaha (Music Division)</span></li>
+				    		<li><span>JBL</span></li>
+				    		<li><span>AT&T/Cingular</span></li>
+				    		<li><span>e-bay</span></li>
+				    		<li><span>JC Penney</span></li>
+				    		<li><span>MTV</span></li>
+				    	</ul>
+				    </div>
+				    <div class="client__data col-2">
+				    	<h2>pubblications</h2>
+				    	<ul class="client__list">
+				    		<li><span>GQ</span></li>
+				    		<li><span>Sportweek</span></li>
+				    		<li><span>Harvard Business Review</span></li>
+				    		<li><span>Design Bureau</span></li>
+				    		<li><span>Nylon</span></li>
+				    		<li><span>Synthesis</span></li>
+				    		<li><span>TIME</span></li>
+				    		<li><span>Alternative Press</span></li>
+				    		<li><span>Guitar Edge</span></li>
+				    		<li><span>Guitar World</span></li>
+				    		<li><span>The Atlantan</span></li>
+				    		<li><span>Creative Loafing</span></li>
+				    		<li><span>Southeast Performer</span></li>
+				    		<li><span>USA Today</span></li>
+				    		<li><span>AFP (stringer)</span></li>
+				    		<li><span>Men's Book</span></li>
+				    	</ul>
+				    </div>
+				    <bloquot class="client__speech col-6 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis risus et sem facilisis, eget pulvinar purus rutrum. Vestibulum vitae finibus sem, at feugiat libero. <br> <span>- John Doe -</span> </bloquot>
+					
+				</div>
+			
+			</section>
+
+			<section class="persons container-fluid">
+			<div class="persons__wraper row">
+					
+				<div class="persons__person col-4">
+                  <div class="persons__inner--Even persons__inner">
+                   	
+                  <div class="persons__foto"><img src="img/frstBL.png" alt=""></div>
+					<div class="persons__data ">
+						<h2 class="persons__title">Daniel Jackson Shoots 
+                          New Yorkers for i-D</h2>
+						<p class="persons__text">Photography Daniel Jackson,  styling by Alastair McKimm, hair by Shon  and Esther Langham, make-up by Yadim,  Francelle and Hannah Murray, 
+                        casting by AM casting. Production  by Nikki Stromberg and Matthew Youmans at M.A.P New York.</p>
+						<div class="persons__btn  btn btn-lg  btn-warning">read more</div>
+					<div class="persons__like">
+						<span>
+							<time>25.08.2014</time>
+						</span>
+						<span></span>
+					</div>
+					</div>
+                  </div>
+				</div>
+				<div class="persons__person col-4">
+                   <div class="persons__inner--Odd persons__inner">
+                   	
+					<div class="persons__foto"><img src="img/secBl.png" alt=""></div>
+					<div class="persons__data">
+						<h2 class="persons__title">Derek Henderson Shoots Karen Walker / ITC Ethical 
+                        Fashion Initiative Visible 2014 Campaignts Karen Walker / ITC Ethical 
+                        Fashion Initiative Visible 2014 Campaign</h2>
+						<p class="persons__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie, purus id mollis pharetra, lacus turpis dapibus magna, eget aliquam diam erat at velit. Suspendisse in diam sit amet erat blandit efficitur at eget lorem. Aenean elementum lobortis tellus, sit amet mollis tortor rhoncus id.</p>
+						<div class="persons__btn  btn btn-lg  btn-warning">read more</div>
+                        	<div class="persons__like">
+						<span>
+							<time>15.08.2014</time>
+						</span>
+						<span></span>
+					</div>
+					</div>
+                   </div>
+				</div>
+				<div class="persons__person col-4">
+                   <div class="persons__inner--Even persons__inner">
+                   	
+					<div class="persons__foto"><img src="img/thrdBl.png" alt=""></div>
+					<div class="persons__data">
+						<h2 class="persons__title ">Anne & jack Walker / ITC Ethical 
+                         Fashion Initiative Visible 2014 Campaign</h2>
+						<p class="persons__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie, purus id mollis pharetra, lacus turpis dapibus magna, eget aliquam diam erat at velit. Suspendisse in diam sit amet erat blandit efficitur at eget lorem. Aenean elementum lobortis tellus, sit amet mollis tortor rhoncus id.</p>
+						<div class="persons__btn  btn btn-lg  btn-warning">read more</div>
+                        	<div class="persons__like">
+						<span>
+							<time>13.08.2014</time>
+						</span>
+						<span></span>
+					</div>
+					</div>
+                   </div>
+				</div>			
+				<div class="persons__person col-4">
+                   <div class="persons__inner--Odd persons__inner">
+                   	
+					<div class="persons__foto"><img src="img/forthBl.png" alt=""></div>
+					<div class="persons__data">
+						<h2 class="persons__title">Amy Troost Shoots SS14 
+                          Collections for The Last Magazine</h2>
+						<p class="persons__text">Photography Daniel Jackson,  styling by Alastair McKimm, hair by Shon  and Esther Langham, make-up by Yadim,  Francelle and Hannah Murray, 
+                        casting by AM casting. Production  by Nikki Stromberg and Matthew Youmans at M.A.P New York.</p>
+						<div class="persons__btn  btn btn-lg  btn-warning">read more</div>
+						<div class="persons__like">
+						<span>
+							<time>22.08.2014</time>
+						</span>
+						<span></span>
+					</div>
+					</div>
+
+                   </div>
+				</div>
+				<div class="persons__person col-4">
+                   <div class="persons__inner--Even persons__inner">
+                   	
+					<div class="persons__foto"><img src="img/fifthBl.png" alt=""></div>
+					<div class="persons__data">
+						<h2 class="persons__title">Paul Wetherell Shoots Meadham Kirchhoff SS14 Collection for i-D Walker.</h2>
+						<p class="persons__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie, purus id mollis pharetra, lacus turpis dapibus magna, eget aliquam diam erat at velit. Suspendisse in diam sit amet erat blandit efficitur at eget lorem. Aenean elementum lobortis tellus, sit amet mollis tortor rhoncus id.</p>
+						<div class="persons__btn  btn btn-lg  btn-warning">read more</div>
+                     	<div class="persons__like">
+						<span>
+							<time>29.07.2014</time>
+						</span>
+						<span></span>
+					</div>
+					</div>
+                   </div>
+				</div>
+				<div class="persons__person col-4">
+                   <div class="persons__inner--Odd persons__inner">
+                   	
+					<div class="persons__foto"><img src="img/sixBl.png" alt=""></div>
+					<div class="persons__data">
+						<h2 class="persons__title">Will Davidson Shoots Jennifer Connelly for The Edit Ethical. </h2>
+						<p class="persons__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie, purus id mollis pharetra, lacus turpis dapibus magna, eget aliquam diam erat at velit. Suspendisse in diam sit amet erat blandit efficitur at eget lorem. Aenean elementum lobortis tellus, sit amet mollis tortor rhoncus id.</p>
+
+						<div class="persons__btn  btn btn-lg  btn-warning ">read more</div>
+
+                          	<div class="persons__like">
+						<span>
+							<time>15.07.2014</time>
+						</span>
+						<span></span>
+					</div>
+
+					</div>
+                   </div>
+				</div>
+			</div>
+			<div class="persons__counter">
+				<div class="persons__arrow persons__arrow--prev">prev</div>
+				<span>dzfgnzd</span>
+				<div class="persons__arrow persons__arrow--next">next</div>
+			</div>
+			<div class="persons__upScroll"></div>
+			</section>
+			<section class="gallery container-fluid">
+				<div class="gallery__wrapper row">
+					
+				<div class="gallery__text col-4"><h3 class="gallery__title">portfolio</h3>
+				<span class="gallery__str">gallery three</span></div>
+				<div class="gallery__pct col-4"><img src="img/wSmith.png" alt=""></div>
+				<div class="gallery__pct col-4"><img src="img/bPitt.png" alt=""></div>
+				<div class="gallery__pct col-4"><img src="img/bWillis.png" alt=""></div>
+				<div class="gallery__pct col-4"><img src="img/jAniston.png" alt=""></div>
+				<div class="gallery__pct col-4"><img src="img/jLo.png" alt=""></div>
+				<div class="gallery__pct col-4"><img src="img/kNightly.png" alt=""></div>
+				<div class="gallery__pct col-4"><img src="img/mFreeman.png" alt=""></div>
+				<div class="gallery__pct col-4"><img src="img/jDepp.png" alt=""></div>
+				</div>
+			</section>
+			<section class="post container-fluid">	
+             <div class="post__wrapper row">
+					
+              <div class="post__foto col-8 offset-2"><img src="img/portrait.png" alt=""></div>
+              <h2 class="post__title col-8 offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+              <span class="post__str col-2 offset-4">
+              	<time> <i>29/07/2014</i></time>
+              </span>
+              <span class="post__str post__str--comments col-2 ">301</span>
+              <span class="post__str post__str--like col-2 ">405</span>
+              <p class="post__txt col-8 offset-2"><strong> Duis dapibus aliquam mi</strong>, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et <strong> malesuada fames ac turpis egestas.</strong> Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+              <p class="post__txt col-8 offset-2">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. <strong> Curabitur vitae velit in neque</strong> dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+              <p class="post__txt col-8 offset-2">Duis dapibus aliquam mi, <strong> eget euismod sem scelerisque ut.</strong> Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              <p class="post__txt col-8 offset-2">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. <strong> Vivamus at elit quis urna adipiscing iaculis.</strong> Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. <strong> Pellentesque habitant</strong> morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+              <div class="post__share col-8 offset-2">
+              	<span>share</span>
+              	<a href="#" class="post__social"><svg aria-hidden="true" focusable="true" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
+              	<a href="#" class="post__social"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+              	<a href="#" class="post__social"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest-p" class="svg-inline--fa fa-pinterest-p fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path></svg></a>
+                <a href="#" class="post__renew"><svg aria-hidden="true" focusable="true" data-prefix="fas" data-icon="retweet" class="svg-inline--fa fa-retweet fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="" d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path></svg></a>
+              </div>
+              <div class="post__blog col-8 offset-2">
+              		<h3 class="post__counter">10 comments</h3>
+              	<ul class="post__cmmnts">
+              		<li class="post__wrap ">
+              			<span class="post__avName">
+              			    Derek D.	
+              				<time>oct.24.2017</time>
+              			</span>
+              			<span class="post__replay">
+              			</span>
+              				<div class="post__cmmnt d-flex align-items-center justify-content-between">
+              					
+              			<div class="post__avatar"><img src="" alt=""></div>
+              			<dvi class="post__speech">
+              				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie, purus id mollis pharetra, lacus turpis dapibus magna, eget aliquam diam erat at velit.</p>
+              			 </dvi>
+              			</div>
+              		</li>
+              		<li class="post__answer ">
+              			<span class="post__avName">
+              			    Derek D.	
+              				<time>oct.24.2017</time>
+              			</span>
+              			<span class="post__replay">
+              			</span>
+              				<div class="post__com d-flex align-items-center justify-content-between">
+              					
+              			<div class="post__avatar"><img src="" alt=""></div>
+              			<dvi class="post__speech">
+              				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie, purus id mollis pharetra, lacus turpis dapibus magna, eget aliquam diam erat at velit.</p>
+              			 </dvi>
+              			</div>
+
+              			
+              		</li>
+              		<li class="post__wrap ">
+              			<span class="post__avName">
+              			    Derek D.	
+              				<time>oct.24.2017</time>
+              			</span>
+              			<span class="post__replay">
+              			</span>
+              				<div class="post__cmmnt d-flex align-items-center justify-content-between">
+              					
+              			<div class="post__avatar"><img src="" alt=""></div>
+              			<dvi class="post__speech">
+              				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie, purus id mollis pharetra, lacus turpis dapibus magna, eget aliquam diam erat at velit.</p>
+              			 </dvi>
+              			</div>
+              		</li>
+              		<li class="post__answer ">
+              			<span class="post__avName">
+              			    Derek D.	
+              				<time>oct.24.2017</time>
+              			</span>
+              			<span class="post__replay">
+              			</span>
+              				<div class="post__com d-flex align-items-center justify-content-between">
+              					
+              			<div class="post__avatar"><img src="" alt=""></div>
+              			<dvi class="post__speech">
+              				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie, purus id mollis pharetra, lacus turpis dapibus magna, eget aliquam diam erat at velit.</p>
+              			 </dvi>
+              			</div>
+
+              			
+              		</li>
+              	</ul>
+              </div>
+             </div>
+              <div class="post__comments row">
+              	<span class="offset-2 col-10">Leave a comment</span>
+              	<form action="" class="post__form col-8 offset-2 row">
+              		
+            <div class="form-group col-5 ">
+                   <label for="exampleInputEmail1"> </label>
+                   <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+            </div>         		  
+            <div class="form-group col-5 offset-2">
+                   <label for="exampleInputEmail1"></label>
+                   <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+            </div>         		  
+            <div class="form-group col-5">
+                   <label for="exampleInputEmail1"></label>
+                   <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Web site">
+            </div>         		  
+            <div class="form-group col-5 offset-2">
+                   <label for="exampleInputEmail1"></label>
+                   <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Job">
+            </div>
+             <div class="form-group col-8">
+             <label for="exampleFormControlTextarea1"></label>
+             <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" placeholder="Comment" rows="5"></textarea>
+             </div>
+             <button type="submit" class=" post__btn btn btn-dark col-3">Send</button>
+              	</form>
+              	<span class="post__line col-8 offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis semper nisl, vitae malesuada massa egestas a. Vestibulum vestibulum urna sapien, eu bibendum magna ornare non.</span>
+              	
+              </div>
+			</section>
+			<section class="workshop container-fluid">
+				<div class="workshop__wrapper row">
+					
+
+				<div class="workshop__banner col-4 ">
+					<div class="workshop__inn d-flex flex-column">
+						<img src="img/workshopPct.png" alt="">
+
+				<span>fashion workshop</span>
+				<span><time>nov 21-23</time></span>
+				<span><time>9:00 am - 4:00 pm</time></span>
+                 <div class="workshop__ban d-flex align-self-center justify-content-center">
+                 	<span>rsvp</span>
+                 </div>
+			    </div>
+			    </div>
+				<div class="workshop__blog col-4">
+					<h3 class="col-6">recent post</h3>
+					<div class="workshop__comment d-flex justify-content-between ">
+						<img src="img/recentPct1.png" alt="">
+						<div class="workshop__txt">
+							<h4>New Gallery Set</h4>
+							<span><time>09.12.2014</time></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget.<a href="#">read more</a></p>
+						</div>
+					</div>
+					<div class="workshop__comment d-flex justify-content-between">
+						<img src="img/recentPct2.png" alt="">
+						<div class="workshop__txt">
+							<h4>wedding workshop</h4>
+							<span><time>09.12.2014</time></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget.<a href="#">read more</a></p>
+						</div>
+					</div>
+					<div class="workshop__comment d-flex justify-content-between">
+						<img src="img/recentPct3.png" alt="">
+						<div class="workshop__txt">
+							<h4>Personal Project</h4>
+							<span><time>09.12.2014</time></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget.<a href="#">read more</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="workshop__categories col-4">
+					<h3 class="col-6">category</h3>
+					<ul class="workshop__list">
+						<li class="workshop__item">Fashion</li>
+						<li class="workshop__item">Collection</li>
+						<li class="workshop__item">World</li>
+						<li class="workshop__item">Photography</li>
+						<li class="workshop__item">General</li>
+						<li class="workshop__item">Info</li>
+						<li class="workshop__item">Catalog</li>
+						<li class="workshop__item">Video</li>
+						<li class="workshop__item">Showreal</li>
+						<li class="workshop__item">Glamour</li>
+						<li class="workshop__item">Accessories</li>
+					</ul>
+				</div>
+				
+				</div>
+			</section>
+			<footer class="base container-fluid">
+					<div class="base__wrapper ">
+					<ul class="base__logos">
+						<li class="base__logo"><img src="img/phaseone%20logo.png" alt=""></li>
+						<li class="base__logo"><img src="img/manfrotto%20logo.png" alt=""></li>
+						<li class="base__logo"><img src="img/hasselblad.png" alt=""></li>
+						<li class="base__logo"><img src="img/broncolor%20logo.png" alt=""></li>
+					</ul>
+				</div>
+				<span>Created by 2ndself.com, with <br>exclusive for theuncreativelab.com
+                 </span>
+                 <span>
+                 	© 2014 Square. All Rights Reserved.
+                 </span>
+
+			</footer>
+	
+
+
+
+			
+		</main>
+		
+		<!-- =======================jquery=========================== -->
+		<script src="js/jquery-min.js"></script>
+		
+		<!--========================= js ============================ -->
+		<script src = "js/scripts.js"></script>
+
+	    <!--======================= slider ========================== -->
+		<script src="js/slick.js"></script>
+			
+
+		<!--======================== maps =========================== -->
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDXUTMWWK4qZwIsU3AudvJ9UC48L9IdA8&callback=initMap" type="text/javascript"></script>
+</body>
+</html>
