@@ -1164,6 +1164,22 @@ main {
     margin-top: 4%; }
   .nav__socials {
     display: none; }
+  .timeline__title {
+    height: 15rem; }
+    .timeline__title span {
+      height: 60%; }
+  .timeline__data {
+    margin-top: 0; }
+  .client__title {
+    height: 15rem; }
+    .client__title span {
+      height: 60%; }
+  .client__data {
+    margin-top: 0; }
+  .gallery__title {
+    font-size: 2rem; }
+  .gallery__str {
+    font-size: 1.2rem; }
   .contacts__info {
     margin-top: 4rem; }
     .contacts__info::before {

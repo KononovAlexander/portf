@@ -1163,6 +1163,36 @@ main{
       display: none;
     }
   }
+  .timeline{
+    &__title{
+      height: 15rem;
+      & span{
+        height: 60%;
+      }
+    }
+    &__data{
+      margin-top: 0;
+    }
+  }
+  .client{
+    &__title{
+      height: 15rem;
+      & span{
+        height: 60%;
+      }
+    }
+    &__data{
+      margin-top: 0;
+    }
+  }
+  .gallery{
+    &__title{
+      font-size: 2rem;
+    }
+    &__str{
+      font-size: 1.2rem;
+    }
+  }
               .contacts{
         &__info{
           margin-top: 4rem  ;
